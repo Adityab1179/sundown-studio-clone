@@ -936,7 +936,6 @@ button {
     }
 
     .design-project-execution {
-
         flex-direction: column;
     }
 
@@ -1007,6 +1006,9 @@ button {
 }
 
 @media (max-width:600px) {
+    .design-project-execution {
+        min-height: 70%;
+    }
     .section1 {
         min-height: 65vh;
     }
@@ -1016,7 +1018,7 @@ button {
     }
 
     .text-section {
-        height: 75vh;
+        height: 70vh;
         justify-content: space-evenly;
         flex-direction: column-reverse;
     }
@@ -1116,11 +1118,17 @@ button {
     .footer {
         height: 75%;
     }
+    .left-text {
+        height: 70vh;
+        align-items: start;
+        padding-left: 30px;
+        width: 100%;
+    }
 }
 
 @media (max-width:500px) {
     .text-section {
-        height: 65vh;
+        height: 55vh;
     }
 
     .project-img img,
@@ -1180,5 +1188,32 @@ button {
 
     .footer-top-right {
         width: 40%;
+    }
+}
+@media (max-width:400px) {
+    .section1{
+        min-height: 50vh;
+    }
+    .text-section{
+        height: 50vh;
+    }
+    .section-6{
+        height: 50vh;
+    }
+    .footer{
+        height: 50vh;
+    }
+    .design-project-execution {
+        min-height: 50%;
+    }
+    .left-text {
+        height: 55vh;
+        align-items: start;
+        padding-left: 30px;
+        width: 100%;
+    }
+    button {
+        font-size: .7rem;
+        padding: 10px 30px;
     }
 }
