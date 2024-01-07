@@ -1007,6 +1007,9 @@ button {
 }
 
 @media (max-width:600px) {
+    .section1 {
+        min-height: 65vh;
+    }
     .project-details {
         text-align: center;
         font-size: 3vw;
@@ -1025,6 +1028,12 @@ button {
 
     .product-section p {
         font-size: 18px;
+    }
+    .left-text {
+        height: 70vh;
+        align-items: start;
+        padding-left: 30px;
+        width: 100%;
     }
 
     .animation-div1,
@@ -1084,11 +1093,11 @@ button {
     }
 
     .section-6 {
-        height: 75vh;
+        height: 70vh;
     }
 
     .footer {
-        height: 75%;
+        height: 70%;
     }
 
 
