@@ -1,5 +1,5 @@
-# [Project-Link](https://adityab1179.github.io/sundown-studio-clone/)
 # sundown-studio-clone(responsive)
+# [Project-Link](https://adityab1179.github.io/sundown-studio-clone/){:target="_blank"}
 # Tech Stack Used
 * HTMl
 * CSS
