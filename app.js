@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.wrapper'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.wrapper'),
+//     smooth: true
+// });
 function swiper(){
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
