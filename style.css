@@ -18,7 +18,10 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+html,body{
+    height: 100%;
+    width: 100%;
+}
 .wrapper {
     z-index: 100;
     position: relative;
@@ -28,7 +31,7 @@
     overflow-x: hidden;
     font-family: neu-has-light;
     padding: 0px 20px;
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
@@ -99,8 +102,9 @@ nav ul li:hover a {
 
 .text-section {
     font-family: neu-has-med;
+    padding-top: 10%;
     width: 100%;
-    height: 82vh;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -119,6 +123,8 @@ nav ul li:hover a {
 }
 
 .text-right {
+    position: relative;
+    z-index: 1;
     width: 50%;
     display: flex;
     justify-content: end;
@@ -195,7 +201,7 @@ nav ul li:hover a {
     background-color: #EFEAE3;
     font-family: neu-has-med;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
 }
 
 
@@ -266,7 +272,7 @@ ul li h2 {
 
 .featured-product-section {
     width: 100%;
-    min-height: 80vh;
+    height: 100%;
     display: flex;
     position: relative;
 
@@ -369,7 +375,7 @@ ul li h2 {
 .section-3 {
     font-family: neu-has-light;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background-color: #EFEAE3;
 }
 
@@ -488,7 +494,7 @@ button {
 .section-4 {
     background-color: #EFEAE3;
     width: 100%;
-    min-height: 120vh;
+    height: 100%;
     padding-top: 4%;
 }
 
@@ -497,7 +503,6 @@ button {
     width: 95%;
     display: flex;
     margin: auto;
-    min-height: 90%;
 }
 
 .left-text {
@@ -509,6 +514,7 @@ button {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 10vw;
 }
 
 .left-head {
@@ -553,10 +559,10 @@ button {
 
 .section-5 {
     font-family: neu-has-light;
-    padding: 0vw 2vw 2vw 5vw;
+    padding: 10vw 2vw 2vw 10vw;
     padding-left: 5vw;
     background-color: #EFEAE3;
-    min-height: 90vh;
+    height: 100%;
 }
 
 .swiper {
@@ -598,7 +604,7 @@ button {
 .section-6 {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 70%;
 }
 
 .footer {
@@ -608,7 +614,7 @@ button {
     bottom: 0;
     z-index: 7;
     width: 100%;
-    height: 100%;
+    height: 70%;
     color: white;
     background-color: black;
 }
@@ -635,7 +641,6 @@ button {
     gap: 20px;
     width: 30%;
     font-weight: 500;
-
     font-family: neu-has-light;
 }
 
@@ -886,8 +891,11 @@ button {
         font-size: 2vw;
     }
 
-    .section-4 {
-        min-height: 100vh;
+    .section-6{
+        height: 60%;
+    }
+    .footer{
+        height: 60%;
     }
 }
 
@@ -902,7 +910,6 @@ button {
     }
 
     .text-section {
-        height: 90vh;
         justify-content: space-evenly;
         flex-direction: column-reverse;
     }
@@ -912,7 +919,7 @@ button {
     }
 
     .featured-product-section {
-        padding-bottom: 20vh;
+        padding-bottom: 10%;
         flex-direction: column;
     }
 
@@ -940,7 +947,6 @@ button {
     }
 
     .left-text {
-        height: 70vh;
         margin: 5vw auto;
         width: 90%;
     }
@@ -984,31 +990,22 @@ button {
         font-size: .8rem;
     }
 
-    .section-4 {
-        min-height: 100vh;
-    }
-
     .section-5 {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-height: 70vh;
-        padding: 0vw 2vw 0vw 5vw;
     }
 
     .section-6 {
-        height: 85vh;
+        height: 60%;
     }
 
     .footer {
-        height: 85%;
+        height: 60%;
     }
 }
 
 @media (max-width:600px) {
-    .design-project-execution {
-        min-height: 70%;
-    }
     .section1 {
         min-height: 65vh;
     }
@@ -1018,7 +1015,6 @@ button {
     }
 
     .text-section {
-        height: 70vh;
         justify-content: space-evenly;
         flex-direction: column-reverse;
     }
@@ -1032,7 +1028,6 @@ button {
         font-size: 18px;
     }
     .left-text {
-        height: 70vh;
         align-items: start;
         padding-left: 30px;
         width: 100%;
@@ -1095,11 +1090,11 @@ button {
     }
 
     .section-6 {
-        height: 70vh;
+        height: 55%;
     }
 
     .footer {
-        height: 70%;
+        height: 55%;
     }
 
 
@@ -1107,26 +1102,16 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-height: 70vh;
-        padding: 0vw 2vw 0vw 5vw;
     }
 
-    .section-6 {
-        height: 75vh;
-    }
-
-    .footer {
-        height: 75%;
-    }
     .left-text {
-        height: 70vh;
         align-items: start;
         padding-left: 30px;
         width: 100%;
     }
 }
 
-@media (max-width:510px) {
+@media (max-width:500px) {
     .text-section {
         height: 55vh;
     }
@@ -1174,8 +1159,6 @@ button {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        min-height: 70vh;
-        padding: 0vw 2vw 0vw 5vw;
     }
 
     .footer-bottom {
@@ -1190,7 +1173,7 @@ button {
         width: 40%;
     }
 }
-@media (max-width:430px) {
+@media (max-width:400px) {
     .section1{
         min-height: 50vh;
     }
@@ -1203,11 +1186,7 @@ button {
     .footer{
         height: 50vh;
     }
-    .design-project-execution {
-        min-height: 50%;
-    }
     .left-text {
-        height: 55vh;
         align-items: start;
         padding-left: 30px;
         width: 100%;
