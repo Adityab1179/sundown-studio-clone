@@ -1126,7 +1126,7 @@ button {
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:510px) {
     .text-section {
         height: 55vh;
     }
@@ -1190,7 +1190,7 @@ button {
         width: 40%;
     }
 }
-@media (max-width:400px) {
+@media (max-width:430px) {
     .section1{
         min-height: 50vh;
     }
